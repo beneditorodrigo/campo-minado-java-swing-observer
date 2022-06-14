@@ -5,8 +5,8 @@ import javax.swing.JFrame;
 import br.com.beneditorodrigo.cm.modelo.Tabuleiro;
 
 @SuppressWarnings("serial")
-public class TelaPrincipal extends JFrame{
-
+public class TelaPrincipal extends JFrame {
+	
 	public TelaPrincipal() {
 		Tabuleiro tabuleiro = new Tabuleiro(16, 30, 50);
 		add(new PainelTabuleiro(tabuleiro));
@@ -17,7 +17,7 @@ public class TelaPrincipal extends JFrame{
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		setVisible(true);
 	}
-	
+
 	public static void main(String[] args) {
 		new TelaPrincipal();
 	}
