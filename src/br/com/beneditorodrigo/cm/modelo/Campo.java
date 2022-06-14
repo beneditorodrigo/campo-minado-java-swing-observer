@@ -25,7 +25,7 @@ public class Campo {
 	}
 	
 	private void notificarObservadores(CampoEvento evento) {
-		observadores.forEach(o -> o.eventoOcorreu(this, evento));
+		observadores.stream().forEach(o -> o.eventoOcorreu(this, evento));
 	}
 
 	boolean adicionarVizinho(Campo vizinho) {
